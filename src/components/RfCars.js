@@ -18,17 +18,37 @@ class RfCars extends Component {
         <RfAvailablecar />
 
         {/* Utilisation de la méthode map pour générer dynamiquement les composants Car */}
-        {RfData.map(({ name, year, color, model }, index) => {
-          return (
-            <RfCard
-              key={index}
-              name={name}
-              year={year}
-              color={color}
-              model={model}
-            />
-          );
-        })}
+        {RfData.map(
+          (
+            {
+              name,
+              year,
+              color,
+              model,
+              mileAge,
+              HP,
+              transmissionType,
+              fuel,
+              price,
+            },
+            index
+          ) => {
+            return (
+              <RfCard
+                key={index}
+                name={name}
+                year={year}
+                color={color}
+                model={model}
+                mileAge={mileAge}
+                HP={HP}
+                transmissionType={transmissionType}
+                fuel={fuel}
+                price={price}
+              />
+            );
+          }
+        )}
       </div>
     );
   }

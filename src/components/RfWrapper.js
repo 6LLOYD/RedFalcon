@@ -4,8 +4,8 @@ function RfWrapper({ children }) {
     // Renvoie un conteneur div stylisé avec des propriétés de style en ligne
     <div
       style={{
-        backgroundColor: "grey",
-        width: "400px",
+        backgroundColor: "#506266",
+        width: "380px",
         height: "350px",
         padding: "10px",
         margin: "5px",
