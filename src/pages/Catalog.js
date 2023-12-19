@@ -1,18 +1,21 @@
 import { Component } from "react";
-import RfCard from "./RfCard";
-import RfHeader from "./RfHeader";
-import RfData from "./RfData";
-import RfAvailablecar from "./RfAvailableCar";
+import RfCard from "../components/RfCard";
+import RfHeader from "../components/RfHeader";
+import RfData from "../components/RfData";
+import RfAvailablecar from "../components/RfAvailableCar";
+import { Fragment } from "react";
+import RfNavbar from "../components/RfNavbar";
 
 class RfCars extends Component {
   state = {
-    titre: "Catalogue Voitures",
+    titre: "Cars Catalog ",
   };
 
   // Rendu du composant MyCars avec des éléments HTML et des composants Car imbriqués
   render() {
     return (
-      <div>
+      <Fragment>
+        <RfNavbar />
         {/* Titre de la section avec événement onMouseOver pour ajouter ou supprimer une classe */}
         <RfHeader>{this.state.titre}</RfHeader>
         <RfAvailablecar />
@@ -49,7 +52,7 @@ class RfCars extends Component {
             );
           }
         )}
-      </div>
+      </Fragment>
     );
   }
 }

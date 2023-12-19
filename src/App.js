@@ -1,6 +1,10 @@
-import { Component } from "react";
-import RfCars from "./components/RfCars.js";
+import { Component, Fragment } from "react";
 import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import RfCars from "./pages/Catalog.js";
+import RfLogin from "./pages/Login.js";
+import Home from "./pages/Home.js";
+import Contact from "./pages/Contact.js";
 
 class App extends Component {
   // État initial de l'application
@@ -40,8 +44,17 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <BrowserRouter>
+          <Routes>
+            <Route index element={<RfLogin />} />
+            <Route path="/Home" element={<Home />} />
+            <Route path="/Catalog" element={<RfCars />} />
+            <Route path="/Contact" element={<Contact />} />
+          </Routes>
+        </BrowserRouter>
+        {/* <RfWelcome /> */}
         {/* Composant MyCars avec le titre provenant de l'état */}
-        <RfCars />
+        {/* <RfCars /> */}
 
         {/* Bouton pour déclencher la fonction changeTitle */}
         {/* <button onClick={this.changeTitle}>Changer le nom</button> */}

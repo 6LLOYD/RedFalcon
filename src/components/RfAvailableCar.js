@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import RfData from "./RfData";
 
 const RfAvailablecar = () => {
@@ -6,11 +7,11 @@ const RfAvailablecar = () => {
   let carsString = totalCars > 1 ? "cars" : "car";
 
   return (
-    <div>
+    <Fragment>
       <h2>
         Available {carsString} in the catalog : {totalCars}
       </h2>
-    </div>
+    </Fragment>
   );
 };
 export default RfAvailablecar;

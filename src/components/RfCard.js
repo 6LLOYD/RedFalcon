@@ -1,4 +1,6 @@
 import RfWrapper from "./RfWrapper";
+import RfButton from "./RfButton";
+import RfImageCarousel from "./RfImageCarousel";
 
 // Composant fonctionnel Car qui prend des propriétés (props) children et color
 const RfCard = ({
@@ -12,25 +14,16 @@ const RfCard = ({
   fuel,
   price,
 }) => {
-  // Variable pour stocker l'information sur la couleur
-  let colorInfo = "";
-
-  // Vérifie si la propriété color est définie
-  if (color) {
-    colorInfo = color;
-  } else {
-    colorInfo = "Néant";
-  }
-
   // Renvoie le contenu du composant uniquement si la propriété children est définie
   return (
     name && (
       <RfWrapper>
+        <RfImageCarousel />
         <div
           style={{
-            marginTop: "200px",
             textAlign: "left",
             fontWeight: "bold",
+            height: "31.33px",
           }}
         >
           <p
@@ -83,13 +76,14 @@ const RfCard = ({
               backgroundColor: "#A3AB78",
             }}
           >
-            {colorInfo}
+            {color}
           </p>
         </div>
         <div
           style={{
             textAlign: "left",
             fontWeight: "bold",
+            height: "31.33px",
           }}
         >
           <p
@@ -149,7 +143,7 @@ const RfCard = ({
             {fuel}
           </p>
         </div>
-        <div>
+        <div style={{ marginTop: "15px" }}>
           <p
             style={{
               border: "1.8px solid",
@@ -164,20 +158,7 @@ const RfCard = ({
           >
             {price} €
           </p>
-          <button
-            style={{
-              padding: "5px",
-              borderRadius: "10px",
-              height: "31.33px",
-              width: "255px",
-              fontSize: "14px",
-              backgroundColor: "#A3AB78",
-              fontWeight: "bold",
-              marginLeft: "10px", // Ajoutez cette ligne pour ajouter un espace entre le prix et le bouton
-            }}
-          >
-            More Details...
-          </button>
+          <RfButton />
         </div>
       </RfWrapper>
     )

@@ -1,12 +1,13 @@
 // Composant fonctionnel Wrapper qui prend des propriétés (props) children
 function RfWrapper({ children }) {
+  
   return (
     // Renvoie un conteneur div stylisé avec des propriétés de style en ligne
     <div
       style={{
-        backgroundColor: "#506266",
+        backgroundColor: "#333",
         width: "380px",
-        height: "350px",
+        height: "380px",
         padding: "10px",
         margin: "5px",
         borderRadius: "10px",
