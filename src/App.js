@@ -1,4 +1,4 @@
-import { Component, Fragment } from "react";
+import { Component } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import RfCars from "./pages/Catalog.js";
@@ -50,6 +50,7 @@ class App extends Component {
             <Route path="/Home" element={<Home />} />
             <Route path="/Catalog" element={<RfCars />} />
             <Route path="/Contact" element={<Contact />} />
+            <Route path="/Login" element={<RfLogin />} />
           </Routes>
         </BrowserRouter>
         {/* <RfWelcome /> */}

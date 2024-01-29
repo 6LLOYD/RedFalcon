@@ -24,6 +24,8 @@ const RfCard = ({
             textAlign: "left",
             fontWeight: "bold",
             height: "31.33px",
+            textTransform: "uppercase",
+            marginTop: "20px",
           }}
         >
           <p
@@ -32,7 +34,7 @@ const RfCard = ({
               border: "1.8px solid",
               padding: "5px",
               borderRadius: "10px",
-              fontSize: "14px",
+              fontSize: "13px",
               backgroundColor: "#A3AB78",
             }}
           >
@@ -43,7 +45,7 @@ const RfCard = ({
               border: "1.8px solid",
               padding: "5px",
               marginLeft: "10px",
-              fontSize: "14px",
+              fontSize: "13px",
               borderRadius: "10px",
               backgroundColor: "#A3AB78",
             }}
@@ -55,7 +57,7 @@ const RfCard = ({
               border: "1.8px solid",
               padding: "5px",
               borderRadius: "10px",
-              fontSize: "14px",
+              fontSize: "13px",
               width: "fit-content",
               marginLeft: "10px",
               minWidth: "min-content",
@@ -69,11 +71,12 @@ const RfCard = ({
               border: "1.8px solid",
               padding: "5px",
               borderRadius: "10px",
-              fontSize: "14px",
+              fontSize: "13px",
               display: "inline",
               marginLeft: "10px",
               width: "fit-content",
               backgroundColor: "#A3AB78",
+              textTransform: "lowerCase",
             }}
           >
             {color}
@@ -84,6 +87,7 @@ const RfCard = ({
             textAlign: "left",
             fontWeight: "bold",
             height: "31.33px",
+            marginTop: "15px",
           }}
         >
           <p
@@ -92,7 +96,7 @@ const RfCard = ({
               border: "1.8px solid",
               padding: "5px",
               borderRadius: "10px",
-              fontSize: "14px",
+              fontSize: "13px",
               width: "fit-content",
               backgroundColor: "#A3AB78",
             }}
@@ -105,7 +109,7 @@ const RfCard = ({
               border: "1.8px solid",
               padding: "5px",
               borderRadius: "10px",
-              fontSize: "14px",
+              fontSize: "13px",
               marginLeft: "10px",
               width: "fit-content",
               backgroundColor: "#A3AB78",
@@ -119,7 +123,7 @@ const RfCard = ({
               border: "1.8px solid",
               padding: "5px",
               borderRadius: "10px",
-              fontSize: "14px",
+              fontSize: "13px",
               marginLeft: "10px",
               width: "fit-content",
               backgroundColor: "#A3AB78",
@@ -134,7 +138,7 @@ const RfCard = ({
               border: "1.8px solid",
               padding: "5px",
               borderRadius: "10px",
-              fontSize: "14px",
+              fontSize: "13px",
               marginLeft: "10px",
               width: "fit-content",
               backgroundColor: "#A3AB78",
@@ -149,7 +153,7 @@ const RfCard = ({
               border: "1.8px solid",
               padding: "5px",
               borderRadius: "10px",
-              fontSize: "14px",
+              fontSize: "13px",
               backgroundColor: "#A3AB78",
               fontWeight: "bold",
               width: "100px",

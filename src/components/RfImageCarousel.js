@@ -18,9 +18,8 @@ const RfImageCarousel = () => {
     <div
       style={{
         textAlign: "left",
-        height: "190px",
+        height: "160px",
         border: "2px solid",
-        marginBottom: "20px",
         borderRadius: "10px",
         borderStyle: "2px solid",
       }}

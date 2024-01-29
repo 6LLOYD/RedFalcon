@@ -15,6 +15,10 @@ class RfCars extends Component {
   render() {
     return (
       <Fragment>
+        <style>{`body{
+            background-color: #f2f2f2;
+            margin-bottom: 50px
+          }`}</style>
         <RfNavbar />
         {/* Titre de la section avec événement onMouseOver pour ajouter ou supprimer une classe */}
         <RfHeader>{this.state.titre}</RfHeader>
